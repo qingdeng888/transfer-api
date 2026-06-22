@@ -1,0 +1,8 @@
+.git
+.gitignore
+node_modules
+.spec-workflow
+Dockerfile
+docker-compose.yml
+README.md
+*.md

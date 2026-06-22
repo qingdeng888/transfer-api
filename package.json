@@ -1,12 +1,14 @@
 {
-  "name": "unlimited-transfer-api-worker",
-  "version": "1.0.0",
+  "name": "transfer-api",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "check": "node --check src/worker.js",
-    "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "dev": "node src/server.js",
+    "start": "node src/server.js",
+    "cloudflare:dev": "wrangler dev",
+    "cloudflare:deploy": "wrangler deploy"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"

@@ -1,0 +1,9 @@
+services:
+  transfer-api:
+    build: .
+    container_name: transfer-api
+    restart: unless-stopped
+    ports:
+      - "${PORT:-8787}:8787"
+    env_file:
+      - .env
